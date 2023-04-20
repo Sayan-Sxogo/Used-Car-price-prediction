@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <link rel="stylesheet" href="style1.css">-->
+    <link rel="stylesheet" href="static/css/style1.css">
+<!--    <link rel="stylesheet" href="style2.css">-->
+    <link rel="stylesheet" href="static/css/style2.css">
+    <title>Used Wheels</title>
+    <link rel = "icon" href = "./icons/BLVXMJYTR6.svg" type = "image/x-icon">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-main">
+            <div class="logo">Used<span>Wheels</span></div>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="our_team.html">Our Team</a></li>
+                <li class="nav-link dropdown"><a href="" class="dropdown">Services <i class="bi bi-chevron-compact-down"></i></a>
+                <ul class="dropdown-list">
+                    <li class="nav-link"><a href="">Service 1</a>
+                    <li class="nav-link"><a href="">Service 2</a>
+                </ul>
+                </li>
+                <li class="nav-link"><a href="">Blog</a></li>
+            </ul>
+        </div>
+           
+        <div class="cta">
+            <button class="btn btn-secondary">Log In</button>
+            <button class="btn btn-primary">Get Started</button>
+        </div>
+        <div class="menu">
+          <button class="btn btn-primary menu"><i class="bi-list"></i></button>
+          <ul class="nav-mobile">
+                <li class="nav-link"><a href="">Home</a></li>
+                <li class="nav-link"><a href="">Our Team</a></li>
+                <li class="nav-link dropdown"><a href="" class="dropdown">Services <i class="bi bi-chevron-compact-down"></i></a>
+                <ul class="dropdown-list">
+                    <li class="nav-link"><a href="">Service 1</a>
+                    <li class="nav-link"><a href="">Service 2</a>
+                </ul>
+                </li>
+                <li class="nav-link"><a href="">Blog</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="blob">
+      <!-- This SVG is from https://codepen.io/Ali_Farooq_/pen/gKOJqx -->
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 350">
+      <path d="M156.4,339.5c31.8-2.5,59.4-26.8,80.2-48.5c28.3-29.5,40.5-47,56.1-85.1c14-34.3,20.7-75.6,2.3-111  c-18.1-34.8-55.7-58-90.4-72.3c-11.7-4.8-24.1-8.8-36.8-11.5l-0.9-0.9l-0.6,0.6c-27.7-5.8-56.6-6-82.4,3c-38.8,13.6-64,48.8-66.8,90.3c-3,43.9,17.8,88.3,33.7,128.8c5.3,13.5,10.4,27.1,14.9,40.9C77.5,309.9,111,343,156.4,339.5z"/>
+      </svg>
+    </div>
+
+
+    <div class="container">
+        <div class="header">
+          <div class="column-header">
+            <h1 id="title">Car Price Predictor</h1>
+              <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, illo. Voluptatibus quos, ea voluptatum, quia eum atque quis fugit modi obcaecati tenetur laboriosam nisi qui harum earum ex quidem tempore.</p>
+            </div>
+      
+            <div class="column-image">
+              <div id="image-div">
+                <img src="/static/css/undraw_electric_car.svg" width="400" height="400" alt="Survey form icon">
+              </div>
+          </div>
+        </div>
+<!--        <form action="/predict" method="post">-->
+        <form id="survey-form" action="/predict" method="post">
+            <div class="form-group">
+                <p>Company name</p>
+                <select id="dropdown" name="name" class="form-control" required>
+                  <option disabled selected value>Select your Company</option>
+                  <option value="16">Maruti</option>
+                  <option value="8">Hyundai</option>
+                  <option value="7">Honda</option>
+                  <option value="0">Audi</option>
+                  <option value="20">Nissan</option>
+                  <option value="26">Toyota</option>
+                  <option value="27">Volkswagen</option>
+                  <option value="25">Tata</option>
+                  <option value="12">Land</option>
+                  <option value="19">Mitsubishi</option>
+                  <option value="23">Renault</option>
+                  <option value="17">Mercedes-Benz</option>
+                  <option value="1">BMW</option>
+                  <option value="15">Mahindra</option>
+                  <option value="5">Ford</option>
+                  <option value="22">Porsche</option>
+                  <option value="3">Datsun</option>
+                  <option value="9">Jaguar</option>
+                  <option value="28">Volvo</option>
+                  <option value="2">Chevrolet</option>
+                  <option value="24">Skoda</option>
+                  <option value="18">Mini</option>
+                  <option value="4">Fiat</option>
+                  <option value="10">Jeep</option>
+                  <option value="6">Hindustan</option>
+                  <option value="21">OpelCorsa</option>
+                  <option value="13">MG</option>
+                  <option value="14">MINI</option>
+                  <option value="11">Kia</option>
+                </select>
+              </div>
+          <div class="form-group">
+            <p>Location</p>
+            <select id="dropdown" name="location" class="form-control" required>
+              <option disabled selected value>Select </option>
+              <option value="11">Mumbai</option>
+              <option value="14">Pune</option>
+              <option value="3">Chennai</option>
+              <option value="4">Coimbatore</option>
+              <option value="6">Hyderabad</option>
+              <option value="7">Jaipur</option>
+              <option value="8">Kochi</option>
+              <option value="9">Kolkata</option>
+              <option value="5">Delhi</option>
+              <option value="2">Bangalore</option>
+              <option value="0">Ahmedabad</option>
+              <option value="13">Noida</option>
+            </select>
+          </div>
+
+            <div class="form-group">
+      <label for="year">Year:</label>
+      <select name="year" id="year" class="form-control" required>
+        <option disabled selected value>Select </option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+      </select>
+    </div>
+
+<!--            <div class="form-group">-->
+<!--                <label id="number-label" for="number">Kilometers Driven</label>-->
+<!--                <input type="number" name="kilometers_driven" id="kilometers_driven">-->
+<!--            </div>-->
+             <div class="form-group">
+            <label id="number-label" for="kdriven">Kilometers Driven</label>
+            <input
+              type="number"
+              name="kilometers_driven"
+              id="kdriven"
+              min="1"
+              max="100000"
+              class="form-control"
+              placeholder="0.00"
+            />
+          </div>
+
+            <div class="form-group">
+                <p>Fuel Type</p>
+                <select id="dropdown" name="fuel_type" class="form-control" required>
+                  <option disabled selected value>Select your current status</option>
+                  <option value="0">CNG</option>
+                  <option value="1">Diesel</option>
+                  <option value="4">Petrol</option>
+                  <option value="3">LPG</option>
+                  <option value="2">Electric</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <p>Owner</p>
+                <select id="dropdown" name="owner_type" class="form-control" required>
+                  <option disabled selected value>Select Ownership </option>
+                  <option value="0">First</option>
+                  <option value="2">Second</option>
+                  <option value="3">Third</option>
+                  <option value="1">Fourth & Above</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <p>Transmission</p>
+                <select id="dropdown" name="transmission" class="form-control" required>
+                  <option disabled selected value>Select Transmission </option>
+                  <option value="1">Manual</option>
+                  <option value="0">Automatic</option>
+                </select>
+              </div>
+              
+              
+              <div class="form-group">
+                <p>Seat</p>
+                <select id="dropdown" name="seats" class="form-control" required>
+                  <option disabled selected value>Select Seating capacity</option>
+                  <option value="2.0">2</option>
+                  <option value="4.0">4</option>
+                  <option value="5.0">5</option>
+                  <option value="6.0">6</option>
+                  <option value="7.0">7</option>
+                  <option value="8.0">8</option>
+                  <option value="9.0">9</option>
+                  <option value="10.0">10</option>
+                </select>
+              </div>
+          
+               
+          <div class="form-group">
+            <label id="number-label" for="milage">Milage</label>
+            <input
+              type="number"
+              name="mileage"
+              id="milage"
+              min="1"
+              max="1000"
+              class="form-control"
+              placeholder="0.00"
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="number-label" for="power">Power in bhp</label>
+            <input
+              type="number"
+              name="power"
+              id="power"
+              min="10"
+              max="9999"
+              class="form-control"
+              placeholder="0.00"
+            />
+          </div>
+
+          <div class="form-group">
+            <label id="number-label" for="engine">Engine Displacement</label>
+            <input
+              type="number"
+              name="engine"
+              id="engine"
+              min="10"
+              max="9999"
+              class="form-control"
+              placeholder="0.00"
+            />
+          </div>
+
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      <h3 align="center">{{ prediction_text }}<h3>
+       <section class="footer">
+          <p> </p>
+        </section>
+</body>
+</html>
